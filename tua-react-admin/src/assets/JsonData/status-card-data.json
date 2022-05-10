@@ -1,0 +1,26 @@
+[
+    {
+        "icon": "bx bx-user-pin",
+        "count": "8,995",
+        "title": "Total Workers",
+        "route": "/workers"
+    },
+    {
+        "icon": "bx bx-store-alt",
+        "count": "6,001",
+        "title": "Total Companies",
+        "route": "/companies"
+    },
+    {
+        "icon": "bx bx-message-square-dots",
+        "count": "632",
+        "title": "Worker Request",
+        "route": "/workersrequest"
+    },
+    {
+        "icon": "bx bx-receipt",
+        "count": "711",
+        "title": "Company Request",
+        "route": "/companyrequest"
+    }
+]

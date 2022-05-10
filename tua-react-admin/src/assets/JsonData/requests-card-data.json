@@ -1,0 +1,14 @@
+[
+    {
+        "icon": "bx bx-message-square-dots",
+        "count": "632",
+        "title": "Worker Request",
+        "route": "/workersrequest"
+    },
+    {
+        "icon": "bx bx-receipt",
+        "count": "711",
+        "title": "Company Request",
+        "route": "/companyrequest"
+    }
+]
