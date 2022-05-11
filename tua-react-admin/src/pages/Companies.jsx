@@ -2,15 +2,15 @@ import React from 'react'
 import Table from '../components/table/Table'
 import '../components/topnav/topnav.css'
 
-import workerList from '../assets/JsonData/workers-list.json'
+import companyList from '../assets/JsonData/company-list.json'
 
-const workerTableHead = [
-    'id',
+const companyTableHead = [
+    
     'name',
     'email',
     'phone',
-    'total orders',
-    'total spend',
+    'cin',
+    'gstin',
     'location'
 ]
 
@@ -18,12 +18,11 @@ const renderHead = (item, index) => <th key={index}>{item}</th>
 
 const renderBody = (item, index) => (
     <tr key={index}>
-        <td>{item.id}</td>
         <td>{item.name}</td>
         <td>{item.email}</td>
         <td>{item.phone}</td>
-        <td>{item.total_orders}</td>
-        <td>{item.total_spend}</td>
+        <td>{item.cin}</td>
+        <td>{item.gstin}</td>
         <td>{item.location}</td>
     </tr>
 )
@@ -46,9 +45,9 @@ const Companies = () => {
                         <div className="card__body">
                             <Table
                                 limit='10'
-                                headData={workerTableHead}
+                                headData={companyTableHead}
                                 renderHead={(item, index) => renderHead(item, index)}
-                                bodyData={workerList}
+                                bodyData={companyList}
                                 renderBody={(item, index) => renderBody(item, index)}
                             />
                         </div>

@@ -4,7 +4,7 @@ import '../components/registrationlogin/RegistrationLogin.js'
 
 const RegistrationLogin = () => {
     var toggle = () => {
-        let container = document.getElementById('container1')
+        let container = document.getElementById('container')
 
         container.classList.toggle('sign-in')
         container.classList.toggle('sign-up')
@@ -16,7 +16,7 @@ const RegistrationLogin = () => {
     // }, 200)
     return (
         <>
-            <div id="container1" className="container1">
+            <div id="container" className="container1">
                 {/* FORM SECTION */}
                 <div className="roww">
                     {/* SIGN UP */}

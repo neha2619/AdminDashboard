@@ -11,6 +11,7 @@ import CompanyRequest from '../pages/CompanyRequest'
 import { Analytics } from '../pages/Analytics'
 import { Settings } from '../pages/Settings'
 import RegistrationLogin from '../pages/RegistrationLogin'
+import { Admin } from '../pages/Admin'
 
 
 const Routes = () => {
@@ -25,6 +26,7 @@ const Routes = () => {
             <Route path='/analytics' component={Analytics} />
             <Route path='/settings' component={Settings} />
             <Route path='/registrationlogin' component={RegistrationLogin} />
+            <Route path='/admin' component={Admin} />
         </Switch>
     )
 }

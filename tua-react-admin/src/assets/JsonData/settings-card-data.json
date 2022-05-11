@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "bx bx-user-pin",
+        "title": "Update Profile",
+        "route": "/admin"
+    },
+    {
+        "icon": "bx bx-check-shield",
+        "title": "Change Password",
+        "route": "/companies"
+    },
+    {
+        "icon": "bx bx-log-out",
+        "title": "Log Out",
+        "route": "/registrationlogin"
+    },
+    {
+        "icon": "bx bx-receipt",
+        "title": "View Report",
+        "route": "/analytics"
+    }
+]

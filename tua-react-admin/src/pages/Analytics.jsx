@@ -9,10 +9,10 @@ import { useSelector } from 'react-redux'
 const chartOptions = {
     series: [{
         name: 'New Workers',
-        data: [40, 70, 20, 90, 36, 80, 30, 91, 60, 18]
+        data: [40, 70, 20, 90, 36, 80, 30, 91, 60, 18,0,30]
     }, {
         name: 'New Companies',
-        data: [40, 30, 70, 80, 40, 16, 40, 20, 51, 10]
+        data: [40, 30, 70, 80, 40, 16, 40, 20, 51, 10,4,6]
     }],
     options: {
 
@@ -27,7 +27,7 @@ const chartOptions = {
             curve: 'smooth'
         },
         xaxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep','oct','nov','dec']
         },
         legend: {
             position: 'top'
