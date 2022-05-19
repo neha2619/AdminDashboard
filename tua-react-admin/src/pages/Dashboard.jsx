@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 
 import { Link } from 'react-router-dom'
 import Axios from 'axios'
@@ -164,13 +164,13 @@ const renderRequestBody = (item, index) => (
 )
 
 const Dashboard = () => {
-    // const[joke,setJoke]=useState("");
-    // const getJoke = () => {
-    //     fetch("https:/official-joke-api.appspot.com/random_joke")
+    // const[data,setdata]=useState("");
+    // const getdata = () => {
+    //     fetch("http://5000/admins")
     //         .then((response) =>
     //             response.json())
     //         .then((data) => {
-    //             setJoke(data.setup + "..." + data.punchline);
+    //             setdata(data.name + "..." + data.mobile + "....."+ data.email);
     //         });
 
     // };
@@ -203,8 +203,8 @@ const Dashboard = () => {
                     </div>
                 </div>
                 {/* <div>
-                    <button onClick={getJoke}>heeeeeeeeehe</button>
-                    {joke}
+                    <button onClick={getdata}>heeeeeeeeehe</button>
+                    {data}
                 </div> */}
                 <div className="col-6">
                     <div className="card full-height">
@@ -223,7 +223,7 @@ const Dashboard = () => {
                         />
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-6">
                     <div className="card">
                         <div className="card__header">
                             <h3>top users</h3>
@@ -241,7 +241,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-8">
+                <div className="col-6">
                     <div className="card">
                         <div className="card__header">
                             <h3>latest requests</h3>

@@ -12,7 +12,7 @@
     {
         "display_name": "Company",
         "route": "/companies",
-        "icon": "bx bx-store-alt"
+        "icon": "bx bx-building-house"
     },
     {
         "display_name": "Requests",
