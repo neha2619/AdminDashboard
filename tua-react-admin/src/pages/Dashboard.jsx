@@ -174,6 +174,17 @@ const Dashboard = () => {
     //         });
 
     // };
+    useEffect(() => {
+        const [count, setData] = useState([])
+        //const FetchStatusCard = () => {
+            console.log("clicked");
+            axios.get("http://localhost:5001/api/admins/dashboard").then((response) => {
+                console.log(response)
+                setData(response.data)
+            })
+
+       // }
+    }, []);
 
 
     const themeReducer = useSelector(state => state.ThemeReducer.mode)
@@ -186,18 +197,24 @@ const Dashboard = () => {
                     <div className="row">
                         {
                             statusCards.map((item, index) => (
-                                <div className="col-6" key={index}>
-                                    <Link to={item.route} key={index}>
-                                        <StatusCard
-                                            icon={item.icon}
-                                            count={item.count}
-                                            title={item.title}
+                                count.map((value) => {
+                                    <div className="col-6" key={index}>
+                                        <Link to={item.route} key={index}>
+                                           
+                                        {item.count}={value.count}
+                                            <StatusCard
+                                            
+                                                icon={item.icon}
+                                                count= {item.count}
+                                                title={item.title}
 
 
 
-                                        />
-                                    </Link>
-                                </div>
+                                            />
+                                            
+                                        </Link>
+                                    </div>
+                                })
                             ))
                         }
                     </div>
